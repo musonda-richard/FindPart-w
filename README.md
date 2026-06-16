@@ -231,7 +231,7 @@ This analysis uses actual SARS-CoV-2 lineage sequence count data from the United
 Change to the following directory:
 
 ```bash
-cd 02-Actual-Dataset/00-major-lineages/
+cd 02-actual-data/00-major-lineages/
 ```
 
 Run the full pipeline:
@@ -262,7 +262,7 @@ Lineages were selected as major lineages if their cumulative mean frequency was 
 Change to the following directory:
 
 ```bash
-cd 02-Actual-Dataset/01-USA-data-analysis/
+cd 02-actual-data/01-USA-data-analysis/
 ```
 
 Run the full pipeline:
@@ -298,7 +298,7 @@ The k-means clustering analysis is performed using two settings: 19 trials and 1
 Change to the following directory:
 
 ```bash
-cd 02-Actual-Dataset/02-kmeans/01-kmean-19/
+cd 02-actual-data/02-kmeans/01-kmean-19/
 ```
 
 Run the full pipeline:
@@ -325,7 +325,7 @@ This step compares the partition found by FindPart-w with partitions obtained us
 Change to the following directory:
 
 ```bash
-cd 02-Actual-Dataset/02-kmeans/02-kmean-100/
+cd 02-actual-data/02-kmeans/02-kmean-100/
 ```
 
 Run the full pipeline:
@@ -352,7 +352,7 @@ This step repeats the k-means clustering analysis using 100 trials to evaluate t
 Change to the following directory:
 
 ```bash
-cd 02-Actual-Dataset/03-hierarchical/
+cd 02-actual-data/03-hierarchical/
 ```
 
 Run the full pipeline:
@@ -380,7 +380,7 @@ This step compares the partition found by FindPart-w with partitions obtained us
 Change to the following directory:
 
 ```bash
-cd 02-Actual-Dataset/04-lineage_tree/
+cd 02-actual-data/04-lineage_tree/
 ```
 
 Run the full pipeline:
@@ -407,7 +407,7 @@ This step visualizes the relationships among the analyzed Pango lineages and dis
 Change to the following directory:
 
 ```bash
-cd 02-Actual-Dataset/05-sensitivity-analysis/
+cd 02-actual-data/05-sensitivity-analysis/
 ```
 
 Run the full sensitivity analysis:
@@ -454,7 +454,7 @@ The script then runs the FindPart-w analysis using these values and saves the re
 Change to the following directory:
 
 ```bash
-cd 02-Actual-Dataset/06-furtherplots/
+cd 02-actual-data/06-furtherplots/
 ```
 
 Run the full pipeline:
@@ -479,7 +479,7 @@ This step summarizes and visualizes the results from the real-world dataset anal
 The complete workflow is:
 
 ```bash
-cd 02-Actual-Dataset/00-major-lineages/
+cd 02-actual-data/00-major-lineages/
 make
 
 cd ../01-USA-data-analysis/
