@@ -28,7 +28,7 @@ The analyses include:
 01-Hypothetical-Dataset/
     Scripts for simulating and analyzing hypothetical SARS-CoV-2 lineage datasets
 
-02-Actual-Dataset/
+02-actual-data/
     00-major-lineages/
         Selection of major lineages and creation of count_variants.csv
 
@@ -72,7 +72,7 @@ The following Julia packages are required to run the program:
 Install the required Julia packages using:
 
 ```bash
-julia install.packages.jl
+julia install_packages.jl
 ```
 
 ### R Packages
@@ -88,7 +88,7 @@ The following R packages are required to run the R scripts:
 Install the required R packages using:
 
 ```bash
-R -f install.packages.R
+R -f install_packages.R
 ```
 
 Note: The `grid` package is normally included with base R.
