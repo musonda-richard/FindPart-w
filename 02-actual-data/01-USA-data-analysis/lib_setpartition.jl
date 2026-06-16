@@ -334,10 +334,6 @@ function immediate_common_aggregations(rgs1::Vector{Int64}, rgs2::Vector{Int64})
 end
 
 # function that returns the finest common aggregation for given two maximal RGSs
-#s = [0, 0, 0, 1, 2, 3]
-#t = [0, 1, 0, 2, 3, 1]
-#s = [0, 1, 2, 3, 4, 3]
-#t = [0, 1, 2, 3, 4, 4]
 function finest_common_aggregation(rgs1::Vector{Int64}, rgs2::Vector{Int64})
     @assert is_restricted_growth(rgs1)
     @assert is_restricted_growth(rgs2)

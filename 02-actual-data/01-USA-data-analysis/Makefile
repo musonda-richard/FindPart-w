@@ -1,11 +1,14 @@
-THREADS=16
+THREADS=100
 FTOL_REL = 1e-9
 ALPHA = 4.109
 THETA = 0.73
 BASELINE = KP.3.1.1 
 WIDTH=1
 
-all:estimates.csv rgs-AIC.csv best_estimates.csv best_partition.csv original_RelRe_model.csv trajectory_best.pdf trajectory_original.pdf
+all:count_variants.csv  estimates.csv rgs-AIC.csv best_estimates.csv best_partition.csv original_RelRe_model.csv trajectory_best.pdf trajectory_original.pdf
+	
+count_variants.csv:	
+	cp ../00-major-lineages/count_variants.csv .
 
 estimates.csv:count_variants.csv 
 	time julia --threads=$(THREADS) RelRe.jl -b $(BASELINE) -a $(ALPHA) -t $(THETA) -i count_variants.csv --ftol_rel $(FTOL_REL) -q -u -c 
@@ -49,5 +52,6 @@ clean:
 	rm -f original_RelRe_model.csv
 	rm -f *.pdf 
 	rm -f *.txt
+	rm -f count_variants.csv
 	rm -f nohup.out
 
