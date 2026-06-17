@@ -3,7 +3,7 @@ using DataFrames, CSV, SHA, Dates, Statistics
 start_time = now()
 
 if length(ARGS) != 6
-    @error "Usage: julia reviewer_hclust.jl count_file baseline estimates_file ftol_rel alpha theta"
+    @error "Usage: julia hclust.jl count_file baseline estimates_file ftol_rel alpha theta"
     exit(1)
 end
 
