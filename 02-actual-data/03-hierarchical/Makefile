@@ -8,6 +8,7 @@ all: copy_files hierarchical-rgs-AIC.csv estimates.csv loglikelihood.csv
 
 copy_files:
 	cp ../../RelRe.jl .
+	cp ../../hclust.jl .
 	cp ../../lib_setpartition.jl .
 	cp ../../FindPart-w.jl .
 	cp ../00-major-lineages/count_variants.csv .
@@ -31,3 +32,4 @@ clean:
 	rm -f RelRe.jl
 	rm -f lib_setpartition.jl
 	rm -f FindPart-w.jl
+	rm -f hclust.jl
